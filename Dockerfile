@@ -1,7 +1,7 @@
 FROM apache/spark-py:latest
 
 # Install CBSodata and any other Python dependencies
-RUN pip install --no-cache-dir cbsodata pandas
+RUN pip install --no-cache-dir cbsodata 
 
 # Set the working directory inside the container
 WORKDIR /app
