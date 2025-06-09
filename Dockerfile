@@ -1,4 +1,4 @@
- FROM apache/spark-py:latest
+ FROM bitnami/spark:latest
 
 
 # Switch to root user to install Python packages
