@@ -4,14 +4,11 @@ FROM apache/spark-py:latest
 # Switch to root user to install Python packages
 USER root
 
-# Set HOME to /tmp to avoid permission issues
-ENV HOME=/tmp
 
 # Install cbsodata package
 RUN pip install --no-cache-dir cbsodata
 
-# Switch back to default user (usually 'spark' in this image)
-USER spark
+
 
 # Set the working directory inside the container
 WORKDIR /app
