@@ -2,11 +2,10 @@ FROM apache/spark-py:latest
 
 
 # Switch to root user to install Python packages
-USER root
 
 
 # Install cbsodata package
-RUN pip install --no-cache-dir cbsodata
+RUN pip install --no-cache-dir --user cbsodata
 
 
 
